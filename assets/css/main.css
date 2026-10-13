@@ -1,0 +1,24 @@
+/* ===== GLOBAL RESET & BASE ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+/* Prevent text selection on tap-heavy UI */
+button, .tappable {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Scrollbar hidden but functional */
+::-webkit-scrollbar { display: none; }
+* { scrollbar-width: none; }
